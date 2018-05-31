@@ -1,0 +1,29 @@
+.first{
+                height:300px;
+                width:500px;
+                background:maroon;
+        }
+#Second{
+                height:300px;
+                width:100%;
+                background:orange;
+        }
+h1{
+    color:yellow
+}
+
+#home{
+    height:500px;
+    width:100%;
+    background:olive;
+}
+#about{
+    height:500px;
+    width:100%;
+    background:magenta;
+}
+#contact{
+    height:500px;
+    width:100%;
+    background:yellowgreen;
+}
