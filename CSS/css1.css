@@ -1,0 +1,14 @@
+#first{
+    height:400px;
+    width:400px;
+    background:green;
+    border:5px dashed blue;
+    border-radius: 100%;
+    background-image: url('a.jpg')
+}
+
+#second{
+    height:250px;
+    width:100%;
+    background: yellow;
+}
