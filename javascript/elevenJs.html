@@ -7,23 +7,30 @@
             type="text/javascript"></script>
         <script>
             function validate(){
-                
                 var name = document.getElementById('fname').value;
                 if(name == ""){
-                    document.getElementById('alte').style.visibility="visible";
+                    document.getElementById('Ferr').style.visibility="visible";
                 }
             }
         </script>
     </head>
     <body>
-        <label>FirstName*</label>
-        <input type="text" placeholder="FirstName" id="fname" onblur="validate()"/>
-        <div class="alert alert-danger" style="visibility: hidden" id="alte">
-            Please enter Value
+        <div class="container">
+                <form>
+                    <div class="form-group">
+                            <label>FirstName*</label>
+                            <input class="form-control"
+                            type="text" placeholder="firstname" id="fname" required/>
+                            <div class="alert alert-danger" style="visibility: hidden" id="Ferr">
+                                    Please enter firstName
+                            </div>
+                    </div>
+                    
+                
+                    <label>LastName</label>
+                    <input type="text" placeholder="lastName"/>
+                    <input class="btn btn-success" type="submit" value="button"/>
+                </form>
         </div>
-        <label>LastName</label>
-        <input type="text" placeholder="lastName" id="lname" onb>
-        <br/>
-        <input type="button" value="Button">
-    </body>
+         </body>
 </html>
