@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+           .hidden{
+               display: none;
+           }
+           .complete{
+               text-decoration: line-through;
+           }
+        </style>
+        <script>
+          function doIt(){
+              var toDos = $('.js-to-dos');
+              toDos.find('.js-complete').addClass('complete');
+              toDos.parent().removeClass('hidden');
+          }
+        </script>
+    </head>
+    <body>
+        <h1 class="js-complete">Hiiii</h1>
+        <div class="hidden js-parent">
+            <ul class="js-to-dos">
+                <li class="js-complete">Buy Milk</li>
+                <li>Check Mail</li>
+                <li>Complete TAsk</li>
+            </ul>
+        </div>
+        <input type="button" value="click" onclick="doIt()">
+    </body>
+</html>

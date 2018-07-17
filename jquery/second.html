@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            .red{
+                color:red
+            }
+            .blue{
+                color:blue
+            }
+        </style>
+        <script>
+            function redme(){
+                $('.changeme').removeClass('blue')
+                $('.changeme').addClass('red')
+            }
+            function blueme(){
+                $('.changeme').removeClass('red')
+                $('.changeme').addClass('blue')
+            }
+            function resetme(){
+                $('.changeme').removeClass('red')
+                $('.changeme').removeClass('blue')
+            }
+        </script>
+    </head>
+    <body>
+        <h1 class="changeme">Hello From Original HTML</h1>
+        <input type="button" onclick="redme()" value="red">
+        <input type="button" onclick="blueme()" value="blue">
+        <input type="button" onclick="resetme()" value="reset">
+        
+    
+    </body>
+</html>

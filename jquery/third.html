@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+           .hidden{
+               display: none;
+           }
+        </style>
+        <script>
+            function doHelloWorld(){
+                $('.js-hide-it').removeClass('hidden')
+            }
+            function doHelloWorld1(){
+                $('.js-hide-it').addClass('hidden')
+                $('.js-hello-world').text("text added")
+            }
+        </script>
+    </head>
+    <body>
+       <h1 class="js-hide-it">Hello to parents</h1>
+       <p class="js-hello-world">Welcome</p>
+       <ul>
+           <li class="js-hello-world"></li>
+       </ul>
+
+       <input type="submit" onclick="doHelloWorld()">
+       <input type="submit" value="reset" onclick="doHelloWorld1()">
+    </body>
+</html>
